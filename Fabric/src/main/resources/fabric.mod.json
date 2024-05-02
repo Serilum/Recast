@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "recast",
-  "version": "3.2",
+  "version": "3.4",
 
   "name": "Recast",
   "description": "Automatically re-casts the fishing rod for a player when they catch an item.",
@@ -23,7 +23,7 @@
     "fabric": "*",
     "minecraft": ">=1.19",
     "java": ">=17",
-    "collective": ">=7.21"
+    "collective": ">=7.54"
   },
 
   "custom": {
@@ -38,21 +38,19 @@
 	  " ",
 	  "Thank you very much to my Membership sponsors for supporting the development of this mod!",
 	  " ",
-	  "If you would like to contribute too, check out https://ricksouth.com/donate.",
+	  "If you would like to contribute too, check out https://serilum.com/donate.",
 	  " ",
 	  "Membership sponsors:",
-	  " Adam E",
 	  " Alister",
+	  " Andrean Olgo",
 	  " aternosorg",
+	  " BirdieMiner",
 	  " Cherriesaurus",
-	  " FireStriker",
-	  " Greg Johnson",
-	  " Kreezxil",
+	  " Jack",
+	  " Jeremy Langford",
 	  " Michael W. S.",
-	  " Mir3JonCZ",
-	  " Rebecca Hb.",
+	  " pepe1191",
 	  " Shana Gitnick",
-	  " silver Bowsman",
 	  " Tyler Behl"
   ]
 }
