@@ -5,6 +5,7 @@ import net.minecraft.server.level.ServerLevel;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.level.Level;
+import net.minecraftforge.event.TickEvent;
 import net.minecraftforge.event.TickEvent.PlayerTickEvent;
 import net.minecraftforge.event.entity.player.ItemFishedEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -16,7 +17,7 @@ public class ForgeRecastEvent {
 	public void onPlayerTick(PlayerTickEvent e) {
 		Player player = e.player;
 		Level level = player.level();
-		if (level.isClientSide) {
+		if (level.isClientSide || !e.phase.equals(TickEvent.Phase.END)) {
 			return;
 		}
 

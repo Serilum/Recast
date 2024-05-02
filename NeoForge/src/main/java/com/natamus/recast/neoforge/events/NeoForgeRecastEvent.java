@@ -13,7 +13,7 @@ import net.neoforged.neoforge.event.tick.PlayerTickEvent;
 @EventBusSubscriber
 public class NeoForgeRecastEvent {
 	@SubscribeEvent
-	public static void onPlayerTick(PlayerTickEvent e) {
+	public static void onPlayerTick(PlayerTickEvent.Post e) {
 		Player player = e.getEntity();
 		Level level = player.level();
 		if (level.isClientSide) {
