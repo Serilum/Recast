@@ -1,6 +1,7 @@
 package com.natamus.recast;
 
 import com.natamus.collective.check.RegisterMod;
+import com.natamus.collective.check.ShouldLoadCheck;
 import com.natamus.collective.fabric.callbacks.CollectiveItemEvents;
 import com.natamus.collective.fabric.callbacks.CollectivePlayerEvents;
 import com.natamus.recast.events.RecastEvent;
@@ -17,6 +18,10 @@ public class ModFabric implements ModInitializer {
 	
 	@Override
 	public void onInitialize() {
+		if (!ShouldLoadCheck.shouldLoad(Reference.MOD_ID)) {
+			return;
+		}
+
 		setGlobalConstants();
 		ModCommon.init();
 
