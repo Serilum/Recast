@@ -9,12 +9,10 @@ import net.minecraftforge.event.TickEvent;
 import net.minecraftforge.event.TickEvent.PlayerTickEvent;
 import net.minecraftforge.event.entity.player.ItemFishedEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.fml.common.Mod.EventBusSubscriber;
 
-@EventBusSubscriber
 public class ForgeRecastEvent {
 	@SubscribeEvent
-	public void onPlayerTick(PlayerTickEvent e) {
+	public static void onPlayerTick(PlayerTickEvent e) {
 		Player player = e.player;
 		Level level = player.level();
 		if (level.isClientSide || !e.phase.equals(TickEvent.Phase.END)) {
@@ -25,7 +23,7 @@ public class ForgeRecastEvent {
 	}
 	
 	@SubscribeEvent
-	public void onFishingCatch(ItemFishedEvent e) {
+	public static void onFishingCatch(ItemFishedEvent e) {
 		RecastEvent.onFishingCatch(e.getDrops(), e.getHookEntity());
 	}
 }
