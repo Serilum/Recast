@@ -28,7 +28,7 @@ public class ModForge {
 	}
 
 	private void loadComplete(final FMLLoadCompleteEvent event) {
-    	MinecraftForge.EVENT_BUS.register(new ForgeRecastEvent());
+    	MinecraftForge.EVENT_BUS.register(ForgeRecastEvent.class);
 	}
 
 	private static void setGlobalConstants() {
