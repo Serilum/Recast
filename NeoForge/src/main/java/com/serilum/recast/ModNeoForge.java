@@ -1,9 +1,9 @@
-package com.natamus.recast;
+package com.serilum.recast;
 
 import com.natamus.collective.check.RegisterMod;
 import com.natamus.collective.check.ShouldLoadCheck;
-import com.natamus.recast.neoforge.events.NeoForgeRecastEvent;
-import com.natamus.recast.util.Reference;
+import com.serilum.recast.neoforge.events.NeoForgeRecastEvent;
+import com.serilum.recast.util.Reference;
 import net.neoforged.neoforge.common.NeoForge;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.fml.common.Mod;
