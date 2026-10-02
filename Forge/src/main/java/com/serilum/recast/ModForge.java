@@ -1,9 +1,9 @@
-package com.natamus.recast;
+package com.serilum.recast;
 
 import com.natamus.collective.check.RegisterMod;
 import com.natamus.collective.check.ShouldLoadCheck;
-import com.natamus.recast.forge.events.ForgeRecastEvent;
-import com.natamus.recast.util.Reference;
+import com.serilum.recast.forge.events.ForgeRecastEvent;
+import com.serilum.recast.util.Reference;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.common.Mod;
@@ -28,7 +28,7 @@ public class ModForge {
 	}
 
 	private void loadComplete(final FMLLoadCompleteEvent event) {
-    	MinecraftForge.EVENT_BUS.register(ForgeRecastEvent.class);
+		MinecraftForge.EVENT_BUS.register(ForgeRecastEvent.class);
 	}
 
 	private static void setGlobalConstants() {

@@ -1,4 +1,4 @@
-package com.natamus.recast;
+package com.serilum.recast;
 
 
 public class ModCommon {
