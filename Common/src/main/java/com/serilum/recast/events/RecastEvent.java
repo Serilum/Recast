@@ -1,4 +1,4 @@
-package com.natamus.recast.events;
+package com.serilum.recast.events;
 
 import com.natamus.collective.data.GlobalVariables;
 import com.natamus.collective.functions.BlockPosFunctions;

@@ -1,6 +1,6 @@
-package com.natamus.recast.forge.events;
+package com.serilum.recast.forge.events;
 
-import com.natamus.recast.events.RecastEvent;
+import com.serilum.recast.events.RecastEvent;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.entity.player.Player;
